@@ -20,12 +20,12 @@ $testimonial_class = get_theme_mod('testimonial_layout_class', 'bg-white shadow-
                 if (!$text && !$author) {
                     // Fallback to defaults if customizer is empty
                     $defaults_text = array(
-                        1 => "La qualité du cuir est exceptionnelle. Une babouche qui allie confort et élégance, je recommande vivement !",
-                        2 => "Envoi rapide et soigné. On sent que c'est du fait main avec passion. J'adore mes sabots.",
-                        3 => "Minimaliste et chic. C'est exactement ce que je cherchais pour mes tenues quotidiennes.",
+                        1 => __("La qualité du cuir est exceptionnelle. Une babouche qui allie confort et élégance, je recommande vivement !", 'jeldeex'),
+                        2 => __("Envoi rapide et soigné. On sent que c'est du fait main avec passion. J'adore mes sabots.", 'jeldeex'),
+                        3 => __("Minimaliste et chic. C'est exactement ce que je cherchais pour mes tenues quotidiennes.", 'jeldeex'),
                     );
-                    $defaults_author = array(1 => "Sarah B.", 2 => "Mehdi A.", 3 => "Imane T.");
-                    $defaults_location = array(1 => "Casablanca", 2 => "Rabat", 3 => "Marrakech");
+                    $defaults_author = array(1 => __("Sarah B.", 'jeldeex'), 2 => __("Mehdi A.", 'jeldeex'), 3 => __("Imane T.", 'jeldeex'));
+                    $defaults_location = array(1 => __("Casablanca", 'jeldeex'), 2 => __("Rabat", 'jeldeex'), 3 => __("Marrakech", 'jeldeex'));
 
                     $text = $defaults_text[$i];
                     $author = $defaults_author[$i];

@@ -50,7 +50,7 @@
     }
 
     .product-total {
-        text-align: right;
+        text-align: end; // RTL fix
         font-weight: 700;
     }
 }
@@ -87,7 +87,7 @@
     padding: 15px;
     border-radius: 4px;
     font-size: 0.9rem;
-    border-left: 3px solid $color-cultural;
+    border-inline-start: 3px solid $color-cultural; // RTL fix
 }
 
 /* Order Received / Thank You Page Refinements */

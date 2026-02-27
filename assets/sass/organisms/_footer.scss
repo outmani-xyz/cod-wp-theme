@@ -94,7 +94,7 @@
                 width: 0;
                 height: 2px;
                 bottom: 0px;
-                left: 0;
+                inset-inline-start: 0; // RTL fix
                 background-color: $color-primary;
                 transition: width 0.3s ease;
             }

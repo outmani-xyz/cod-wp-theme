@@ -50,7 +50,7 @@
         <div class="row border-top pt-4">
             <div class="col-12 text-start text-muted">
                 <div class="site-info">
-                    &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('All rights reserved.', 'jeldeex'); ?>
+                    <span dir="ltr" class="d-inline-block">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></span>. <?php _e('All rights reserved.', 'jeldeex'); ?>
                 </div><!-- .site-info -->
             </div>
         </div>

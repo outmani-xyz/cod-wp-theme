@@ -58,7 +58,7 @@
     background: transparent;
     border: none;
     padding: 10px;
-    margin-left: $spacing-sm;
+    margin-inline-start: $spacing-sm; // RTL fix
     cursor: pointer;
     font-size: 1.5rem;
     color: $color-text;
@@ -93,13 +93,13 @@
     .hamburger-inner::before {
         content: "";
         top: -8px;
-        left: 0;
+        inset-inline-start: 0; // RTL fix
     }
 
     .hamburger-inner::after {
         content: "";
         bottom: -8px;
-        left: 0;
+        inset-inline-start: 0; // RTL fix
     }
 }
 
@@ -108,7 +108,7 @@
         display: none; // Start hidden on mobile
         position: absolute;
         top: 100%;
-        left: 0;
+        inset-inline-start: 0; // RTL fix
         width: 100%;
         background: #fff;
         border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -183,7 +183,7 @@
             width: 0;
             height: 2px;
             bottom: 0px;
-            left: 0;
+            inset-inline-start: 0; // RTL fix
             background-color: $color-primary;
             transition: width 0.3s ease;
         }
@@ -201,7 +201,7 @@
 
     @media (max-width: 767px) {
         gap: 0.75rem; // Less gap between toggle/icons on mobile
-        margin-left: 10px; // Add space between toggle button and cart icons
+        margin-inline-start: 10px; // Add space between toggle button and cart icons
     }
 }
 
@@ -225,6 +225,6 @@
     font-size: 0.7rem;
     position: absolute;
     top: -8px;
-    right: -12px;
+    inset-inline-end: -12px; // RTL fix
     font-weight: 700;
 }

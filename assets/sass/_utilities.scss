@@ -61,10 +61,6 @@
 [dir="rtl"] {
     text-align: right;
 
-    .row {
-        flex-direction: row-reverse;
-    }
-
     .text-start {
         text-align: right !important;
     }
@@ -92,4 +88,10 @@
     h6 {
         text-align: right;
     }
+}
+
+// Force LTR text rendering for mixed strings (e.g. copyright with English brand name)
+.ltr-text {
+    direction: ltr;
+    unicode-bidi: isolate;
 }
