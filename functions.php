@@ -13,6 +13,9 @@ if (! defined('_S_VERSION')) {
 
 function jeldeex_setup()
 {
+    // Load theme textdomain for translations
+    load_theme_textdomain('jeldeex', get_template_directory() . '/languages');
+
     // Add default posts and comments RSS feed links to head.
     add_theme_support('automatic-feed-links');
 
