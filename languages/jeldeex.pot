@@ -1,0 +1,263 @@
+# Copyright (C) 2026 https://outmani.me
+# This file is distributed under the same license as the JelDEEX theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: JelDEEX 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/jeldeex\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-27T19:48:55+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: jeldeex\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "JelDEEX"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A minimal, mobile-first WordPress theme for the JelDEEX shoe brand."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "https://outmani.me"
+msgstr ""
+
+#: footer.php:12
+#: template-parts/organisms/hero.php:9
+msgid "Exceptional Moroccan Craftsmanship"
+msgstr ""
+
+#: footer.php:53
+msgid "All rights reserved."
+msgstr ""
+
+#: functions.php:28
+msgid "Primary"
+msgstr ""
+
+#: functions.php:29
+msgid "Secondary"
+msgstr ""
+
+#: functions.php:86
+msgid "Full Name"
+msgstr ""
+
+#: functions.php:87
+msgid "Your full name"
+msgstr ""
+
+#: functions.php:101
+msgid "City"
+msgstr ""
+
+#: functions.php:102
+msgid "Your city"
+msgstr ""
+
+#: functions.php:106
+msgid "Phone"
+msgstr ""
+
+#: functions.php:107
+msgid "Your phone number"
+msgstr ""
+
+#: functions.php:148
+msgid "Place my order"
+msgstr ""
+
+#: functions.php:409
+msgid "Shop Sidebar"
+msgstr ""
+
+#: functions.php:411
+msgid "Add widgets here to appear in your shop and category sidebar."
+msgstr ""
+
+#: header.php:16
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:18
+#: header.php:21
+msgid "FREE DELIVERY EVERYWHERE IN MOROCCO"
+msgstr ""
+
+#: header.php:53
+msgid "Menu"
+msgstr ""
+
+#: header.php:72
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "Social Media Links"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "TikTok URL"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Testimonials (Home Page)"
+msgstr ""
+
+#: inc/customizer.php:144
+#, php-format
+msgid "Testimonial %d - Text"
+msgstr ""
+
+#: inc/customizer.php:161
+#, php-format
+msgid "Testimonial %d - Author"
+msgstr ""
+
+#: inc/customizer.php:178
+#, php-format
+msgid "Testimonial %d - Location"
+msgstr ""
+
+#: inc/customizer.php:192
+msgid "The leather quality is exceptional. A babouche that combines comfort and elegance, I highly recommend!"
+msgstr ""
+
+#: inc/customizer.php:193
+msgid "Fast and careful shipping. You can feel it's handmade with passion. I love my clogs."
+msgstr ""
+
+#: inc/customizer.php:194
+msgid "Minimalist and chic. It's exactly what I was looking for for my daily outfits."
+msgstr ""
+
+#: index.php:29
+msgid "No content found."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Home Page"
+msgstr ""
+
+#: page-home.php:25
+msgid "TOP POPULAR"
+msgstr ""
+
+#: page-home.php:31
+msgid "BEST SELLERS"
+msgstr ""
+
+#: page-home.php:37
+msgid "PROMOTIONS"
+msgstr ""
+
+#: sidebar.php:15
+msgid "Filters"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Custom shop filters will appear here."
+msgstr ""
+
+#: template-parts/atoms/artisan-badge.php:13
+msgid "Handmade in Morocco"
+msgstr ""
+
+#: template-parts/atoms/artisan-badge.php:14
+msgid "100% Genuine Leather & Exceptional Craftsmanship"
+msgstr ""
+
+#: template-parts/molecules/product-card.php:42
+msgid "View Details"
+msgstr ""
+
+#: template-parts/organisms/hero.php:10
+msgid "Discover our collection of traditional clogs in genuine leather."
+msgstr ""
+
+#: template-parts/organisms/hero.php:11
+msgid "View Collection"
+msgstr ""
+
+#: template-parts/organisms/mini-cart.php:12
+msgid "YOUR CART"
+msgstr ""
+
+#: template-parts/organisms/product-grid.php:34
+msgid "No products found."
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:14
+msgid "What Our Customers Say"
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:23
+msgid "La qualité du cuir est exceptionnelle. Une babouche qui allie confort et élégance, je recommande vivement !"
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:24
+msgid "Envoi rapide et soigné. On sent que c'est du fait main avec passion. J'adore mes sabots."
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:25
+msgid "Minimaliste et chic. C'est exactement ce que je cherchais pour mes tenues quotidiennes."
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:27
+msgid "Sarah B."
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:27
+msgid "Mehdi A."
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:27
+msgid "Imane T."
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:28
+msgid "Casablanca"
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:28
+msgid "Rabat"
+msgstr ""
+
+#: template-parts/organisms/testimonials.php:28
+msgid "Marrakech"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:11
+msgid "New in store"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:27
+msgid "Informations de livraison"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:35
+msgid "Récapitulatif"
+msgstr ""
+
+#: woocommerce/content-single-product.php:31
+msgid "Image not available"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:21
+msgid "This product is currently out of stock."
+msgstr ""
