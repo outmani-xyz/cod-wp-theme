@@ -1,0 +1,16 @@
+@import '../variables';
+
+.form-field {
+    margin-bottom: $spacing-md;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    color: $color-text;
+    font-family: $font-sans;
+}

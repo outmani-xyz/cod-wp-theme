@@ -1,0 +1,37 @@
+@import '../variables';
+
+.size-selector-container {
+    margin-bottom: $spacing-md;
+}
+
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.size-option {
+    position: relative;
+}
+
+.size-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.size-label {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.size-option input:checked+.size-label {
+    background-color: $color-accent;
+    color: white;
+    border-color: $color-accent;
+}

@@ -1,0 +1,198 @@
+@use '../variables' as *;
+
+.product-grid-single {
+    margin-bottom: $spacing-xl;
+}
+
+.product-main-row {
+    margin-bottom: $spacing-lg; // Reduced from XL
+}
+
+/* Variation selectors (native and custom swatches) */
+.variations {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: $spacing-md;
+
+    .label {
+        display: block;
+        font-family: $font-sans;
+        font-weight: 700;
+        font-size: 0.95rem; // Slightly larger for readability
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: $color-text;
+        text-align: left;
+        margin-left: 4px; // User requested left push
+    }
+
+    .value {
+        display: block;
+    }
+
+    /* Hidden select for swatches */
+    .hidden-variation-dropdown {
+        display: none !important;
+    }
+
+    /* Fallback if JS fails */
+    select {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        font-family: $font-sans;
+        background: #fff;
+    }
+}
+
+/* Custom JS Swatches (Radio-style buttons) */
+.custom-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .swatch-btn {
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-family: $font-sans;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        color: $color-text;
+
+        &:hover {
+            border-color: $color-primary;
+        }
+
+        &.active {
+            background: $color-primary;
+            color: $color-white;
+            border-color: $color-primary;
+        }
+    }
+}
+
+.woocommerce-variation-price,
+p.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin-top: $spacing-md; // Space top
+    margin-bottom: $spacing-md; // Space bottom
+    display: block !important;
+}
+
+.woocommerce-variation-add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.single_add_to_cart_button {
+    flex: 1;
+    padding: 18px !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: $color-primary !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity {
+    input {
+        width: 60px;
+        padding: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        text-align: center;
+        font-family: $font-sans;
+    }
+}
+
+/* Related / Similar Products */
+.related.products {
+    margin-top: $spacing-md; // Reduced from XL * 1.5
+    padding-top: $spacing-lg; // Reduced from XL
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    >h2 {
+        text-align: center;
+        margin-bottom: $spacing-md; // Reduced from LG
+        font-size: 2rem;
+        color: $color-text;
+        font-family: $font-serif;
+    }
+
+    ul.products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        /* Override WooCommerce clearfix pseudo-elements that break grid */
+        &::before,
+        &::after {
+            content: none !important;
+            display: none !important;
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        li.product {
+            text-align: center;
+            margin: 0 !important;
+            clear: none !important;
+            width: 100% !important;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 4/5;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: $spacing-sm;
+            }
+
+            .woocommerce-loop-product__title {
+                font-size: 1.1rem;
+                font-family: $font-serif;
+                margin-bottom: 5px;
+            }
+
+            .price {
+                color: $color-primary;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+
+            .button {
+                display: none;
+                /* Hide add to cart on related products to keep it minimal */
+            }
+        }
+    }
+}

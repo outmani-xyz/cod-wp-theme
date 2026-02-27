@@ -1,0 +1,16 @@
+@import '../variables';
+
+.input-atom {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    font-family: $font-sans;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-atom:focus {
+    outline: none;
+    border-color: $color-primary;
+}

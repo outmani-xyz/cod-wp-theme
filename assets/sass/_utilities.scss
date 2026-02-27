@@ -1,0 +1,95 @@
+@use 'variables' as *;
+
+// Utility Classes
+
+/* Mobile specific paddings */
+@media (max-width: 767px) {
+    :root {
+        --spacing-lg: 3rem;
+        --spacing-xl: 4rem;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.mt-xs {
+    margin-top: $spacing-xs;
+}
+
+.mt-sm {
+    margin-top: $spacing-sm;
+}
+
+.mt-md {
+    margin-top: $spacing-md;
+}
+
+.mt-lg {
+    margin-top: $spacing-lg;
+}
+
+.mb-xl {
+    margin-bottom: $spacing-xl;
+}
+
+.d-block {
+    display: block;
+}
+
+/**
+ * Narrow Container (Focused layout for single pages)
+ */
+.container-narrow {
+    max-width: 1000px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * RTL Support Base
+ */
+[dir="rtl"] {
+    text-align: right;
+
+    .row {
+        flex-direction: row-reverse;
+    }
+
+    .text-start {
+        text-align: right !important;
+    }
+
+    .text-end {
+        text-align: left !important;
+    }
+
+    .ms-auto {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+    }
+
+    .me-auto {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+
+    .section-title,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: right;
+    }
+}

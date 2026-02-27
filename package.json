@@ -1,0 +1,14 @@
+{
+  "name": "jeldeex",
+  "version": "1.0.0",
+  "description": "JelDEEX SASS Config",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --no-source-map --watch --style=compressed assets/sass:assets/stylesheets",
+    "sass-build": "sass --no-source-map --style=compressed assets/sass:assets/stylesheets"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}

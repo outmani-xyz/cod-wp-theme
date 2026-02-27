@@ -1,0 +1,33 @@
+@import '../variables';
+
+.hero {
+    padding: $spacing-xl 0;
+    background-color: $color-bg;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: $font-serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: $spacing-md;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: $spacing-lg;
+    opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+}

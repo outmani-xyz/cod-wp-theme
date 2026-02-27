@@ -1,0 +1,91 @@
+@import '../variables';
+
+/**
+ * Button Atom
+ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-primary, $font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid transparent;
+    border-radius: 0; // Keeping it sharp/modern
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+
+    &.btn-primary {
+        background-color: var(--color-primary, $color-primary);
+        color: var(--color-white, #fff);
+        border-color: var(--color-primary, $color-primary);
+
+        &:hover {
+            background-color: var(--color-accent, $color-accent);
+            border-color: var(--color-accent, $color-accent);
+            color: var(--color-white, #fff);
+        }
+    }
+
+    &.btn-outline {
+        background-color: transparent;
+        color: var(--color-primary, $color-primary);
+        border-color: var(--color-primary, $color-primary);
+
+        &:hover {
+            background-color: var(--color-primary, $color-primary);
+            color: var(--color-white, #fff);
+        }
+    }
+
+    &.btn-lg {
+        padding: 1.2rem 3rem;
+        font-size: 1.1rem;
+    }
+
+    &.btn-sm {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    &.w-100 {
+        width: 100%;
+    }
+}
+
+// WooCommerce button overrides
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit {
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    @extend .btn;
+    @extend .btn-primary;
+    background-color: var(--color-accent, $color-accent);
+    border-color: var(--color-accent, $color-accent);
+
+    &:hover {
+        background-color: var(--color-primary, $color-primary);
+        border-color: var(--color-primary, $color-primary);
+    }
+}

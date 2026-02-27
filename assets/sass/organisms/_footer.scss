@@ -1,0 +1,127 @@
+@import '../variables';
+
+.site-footer {
+    padding: $spacing-xl 0;
+    background-color: #fcfcfc;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center; // Default to center for mobile
+
+    @media (min-width: 768px) {
+        text-align: start; // Native support for RTL/LTR on desktop
+    }
+
+    .footer-branding,
+    .footer-navigation,
+    .social-links-wrapper {
+        margin-bottom: $spacing-sm;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer-heading {
+        font-family: $font-sans;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgba($color-text, 0.8);
+        border-bottom: 2px solid $color-primary;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+}
+
+.footer-branding {
+    .site-logo {
+        font-size: 1.8rem;
+        margin-bottom: $spacing-sm;
+        color: $color-text;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: $font-sans;
+        color: rgba($color-text, 0.6);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+.footer-navigation {
+    .footer-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 25px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        li {
+            position: relative;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+            font-family: $font-sans;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+            padding: 5px 0;
+            display: inline-block;
+
+            &:hover {
+                color: $color-primary;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: 0px;
+                left: 0;
+                background-color: $color-primary;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.social-links {
+    .social-icon {
+        transition: transform 0.3s ease;
+        display: inline-block;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.site-info {
+    font-size: 0.85rem;
+    color: rgba($color-text, 0.5);
+    font-family: $font-sans;
+    text-align: center;
+    margin-top: $spacing-md;
+    padding: $spacing-sm;
+}

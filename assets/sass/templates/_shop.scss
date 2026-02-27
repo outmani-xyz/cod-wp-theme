@@ -1,0 +1,78 @@
+@use '../variables' as *;
+
+/**
+ * Global E-commerce Layout Refinement
+ * Final specificity push for 3-column grid and Sidebars
+ */
+
+.woocommerce-shop,
+.archive.tax-product_cat {
+
+    .site-main {
+        padding-top: $spacing-lg;
+    }
+
+    /* Sidebar & Filter Toggles */
+    .widget-area {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        @media (min-width: 768px) {
+            padding-right: 30px;
+        }
+
+        /* Enlarge filter button/title for mobile touch targets */
+        .widget-title,
+        .wp-block-heading {
+            font-family: $font-serif;
+            font-size: 1.3rem; // Increased from 1.1 for better visibility
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: $spacing-md;
+            border-bottom: 2px solid #000;
+            padding-bottom: 12px; // Increased touch area
+            margin-top: $spacing-sm; // Space between title and content/filters
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    /* Force 3rd Column Grid - Extreme Specificity */
+    // Also Target standard WC column classes
+    ul.products.columns-4,
+    ul.products.columns-3,
+    ul.products {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+        width: 100% !important;
+
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 30px !important;
+        }
+
+        &::before,
+        &::after {
+            content: none !important;
+        }
+
+        li.product {
+            width: 100% !important;
+            margin: 0 !important;
+            float: none !important;
+            display: flex !important;
+        }
+    }
+}
+
+/**
+ * Checkout Refinement
+ */
+.woocommerce-checkout {
+    #order_review_heading {
+        display: none !important;
+    }
+}
