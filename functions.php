@@ -58,6 +58,11 @@ add_action('after_setup_theme', 'jeldeex_setup');
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Require WooCommerce plugin.
+ */
+require get_template_directory() . '/inc/tgm-config.php';
+
+/**
  * Enqueue scripts and styles.
  */
 function jeldeex_scripts()
