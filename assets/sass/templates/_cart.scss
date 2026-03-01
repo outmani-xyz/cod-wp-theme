@@ -1,0 +1,57 @@
+@use '../variables' as *;
+
+/**
+ * WooCommerce Cart Block Styles
+ */
+
+.wc-block-cart {
+
+    // Proceed to Checkout Button
+    .wc-block-cart__submit-button {
+        background-color: $color-primary !important;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 4px !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1.2rem !important;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.9 !important;
+            background-color: $color-primary !important;
+        }
+    }
+
+    // Coupon Panel Button
+    .wc-block-components-panel__button {
+        color: $color-primary !important;
+        font-weight: 600;
+
+        svg {
+            fill: $color-primary !important;
+        }
+    }
+
+    // Quantity Selector Buttons
+    .wc-block-components-quantity-selector__button {
+        color: $color-primary !important;
+        border-color: rgba($color-primary, 0.2) !important;
+
+        &:hover {
+            background-color: rgba($color-primary, 0.05) !important;
+        }
+    }
+
+    // Summary Items
+    .wc-block-cart__summary-totals {
+        .wc-block-components-totals-item__label {
+            color: $color-text;
+        }
+
+        .wc-block-components-totals-item__value {
+            font-weight: 700;
+            color: $color-primary;
+        }
+    }
+}
