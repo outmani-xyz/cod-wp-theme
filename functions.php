@@ -52,6 +52,17 @@ function jeldeex_setup()
 
     // Enable Widget Support explicitly 
     add_theme_support('widgets');
+
+    // Add support for Custom Logo
+    add_theme_support(
+        'custom-logo',
+        array(
+            'height'      => 100,
+            'width'       => 300,
+            'flex-width'  => true,
+            'flex-height' => true,
+        )
+    );
 }
 add_action('after_setup_theme', 'jeldeex_setup');
 
