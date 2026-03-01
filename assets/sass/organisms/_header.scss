@@ -10,12 +10,19 @@
 }
 
 .site-header {
-    padding: $spacing-sm 0;
+    padding: $spacing-xs 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     background: $color-bg;
     z-index: 100;
+
+    .custom-logo-link {
+        img {
+            max-height: 50px;
+            width: auto;
+        }
+    }
 
     .container {
         padding: 0 $spacing-md;
