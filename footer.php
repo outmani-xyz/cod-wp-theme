@@ -50,7 +50,7 @@
         <div class="row border-top pt-4">
             <div class="col-12 text-start text-muted">
                 <div class="site-info">
-                    <span dir="ltr" class="d-inline-block">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></span>. <?php _e('All rights reserved.', 'jeldeex'); ?>
+                    <span dir="ltr" class="d-inline-block">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></span>. <?php _e('All rights reserved.', 'jeldeex'); ?> | <?php _e('build by:', 'jeldeex'); ?> <a href="https://outmani.me" target="_blank" rel="noopener">outmani.me</a>
                 </div><!-- .site-info -->
             </div>
         </div>

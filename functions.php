@@ -69,12 +69,12 @@ add_action('after_setup_theme', 'jeldeex_setup');
 /**
  * Load Customizer settings.
  */
-require get_template_directory() . '/inc/customizer.php';
+require_once get_template_directory() . '/inc/customizer.php';
 
 /**
  * Require WooCommerce plugin.
  */
-require get_template_directory() . '/inc/tgm-config.php';
+require_once get_template_directory() . '/inc/tgm-config.php';
 
 /**
  * Enqueue scripts and styles.

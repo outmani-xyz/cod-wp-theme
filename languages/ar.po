@@ -38,6 +38,11 @@ msgstr "حرفية مغربية استثنائية"
 msgid "All rights reserved."
 msgstr "جميع الحقوق محفوظة."
 
+#: footer.php:53
+msgid "build by:"
+msgstr "تصميم وتطوير:"
+
+
 #: functions.php:28
 msgid "Primary"
 msgstr "رئيسي"
